@@ -94,7 +94,7 @@ met_options = {
 
 # Streamlit app layout
 st.set_page_config(page_title="Thermal Comfort Predictor", layout="centered")
-st.title("🌡️ Thermal Comfort (PMV) Predictor")
+st.title("🌡️ Thermal Comfort Predictor")
 st.markdown("This app predicts the thermal comfort using **Predicted Mean Vote (PMV)** based on environment, clothing, and activity.")
 
 # --- Environmental Inputs ---
