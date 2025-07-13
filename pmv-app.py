@@ -57,7 +57,7 @@ clo_options = {
 
 # Activity options with MET values
 met_options = {
-    "Sleeping": 0.7,
+   "Sleeping": 0.7,
     "Reclining": 0.8,
     "Seated, quiet": 1.0,
     "Standing, relaxed": 1.2,
@@ -71,24 +71,24 @@ met_options = {
     "Filing, standing": 1.4,
     "Walking about (office)": 1.7,
     "Lifting/packing": 2.1,
-    "Driving car": 1.0,
+    "Driving car": 1.5,
     "Driving aircraft (routine)": 1.2,
     "Aircraft, instrument landing": 1.8,
     "Aircraft, combat": 2.4,
     "Heavy vehicle": 3.2,
-    "Cooking": 1.6,
-    "Housecleaning": 2.0,
+    "Cooking": 1.8,
+    "Housecleaning": 3.0,
     "Seated, heavy limb movement": 2.2,
     "Machine work (sawing)": 1.8,
-    "Machine work (light)": 2.0,
+    "Machine work (light)": 2.2,
     "Machine work (heavy)": 4.0,
     "Handling 50 kg bags": 4.0,
-    "Pick and shovel work": 4.0,
-    "Dancing, social": 2.4,
-    "Calisthenics/exercise": 3.0,
+    "Pick and shovel work": 4.4,
+    "Dancing, social": 3.4,
+    "Calisthenics/exercise": 3.5,
     "Tennis, singles": 4.0,
-    "Basketball": 5.0,
-    "Wrestling, competitive": 7.0
+    "Basketball": 6.3,
+    "Wrestling, competitive": 8.0
 }
 
 
