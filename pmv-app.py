@@ -102,6 +102,9 @@ st.header("Environmental Inputs")
 temperature = st.number_input("Temperature (°C)", min_value=10.0, max_value=40.0, value=25.0)
 humidity = st.number_input("Humidity (%)", min_value=0.0, max_value=100.0, value=50.0)
 
+if temperature > 31.0:
+    st.warning("⚠️ Temperatures above 31°C were not in the training data. Prediction may be less accurate.")
+
 # --- Personal Factors ---
 st.header("Personal Inputs")
 
