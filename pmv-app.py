@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 
 # Load your trained model
-model = joblib.load("best_gradient_boosting_model.pkl")
+model = joblib.load("best_random_forest_model.pkl")
 
 # Clothing options with CLO values (add more from your chart if needed)
 clo_options = {
@@ -99,11 +99,12 @@ st.markdown("This app predicts the thermal comfort using **Predicted Mean Vote (
 
 # --- Environmental Inputs ---
 st.header("Environmental Inputs")
-temperature = st.number_input("Temperature (°C)", min_value=8.0, max_value=40.0, value=25.0)
+temperature = st.number_input("Temperature (°C)", min_value=5.0, max_value=40.0, value=25.0)
 humidity = st.number_input("Humidity (%)", min_value=0.0, max_value=100.0, value=50.0)
 
 if temperature > 31.0:
     st.warning("⚠️ Temperatures above 31°C were not in the training data. Prediction may be less accurate.")
+
 
 # --- Personal Factors ---
 st.header("Personal Inputs")
