@@ -136,7 +136,7 @@ if st.button("Predict PMV"):
     elif 0 <= predicted_pmv < 1:
         sensation = "Slightly Warm"
         color = "🟥"
-    elif predicted_pmv=0:
+    elif predicted_pmv==0:
         sensation = "Neutral"
         color = "🟦"
     elif -1 < predicted_pmv <= 0:
