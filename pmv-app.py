@@ -127,25 +127,25 @@ if st.button("Predict PMV"):
     st.info(f"**Total CLO value:** {clo_value:.2f} | **Selected MET value:** {met_value}")
 
     # ASHRAE Thermal Sensation Scale
-    if predicted_pmv >= 3:
+    if predicted_pmv >= 2:
         sensation = "Hot"
         color = "🔥"
-    elif 2 <= predicted_pmv < 3:
+    elif 1 <= predicted_pmv < 2:
         sensation = "Warm"
         color = "🌡️"
-    elif 1 <= predicted_pmv < 2:
+    elif 0 <= predicted_pmv < 1:
         sensation = "Slightly Warm"
         color = "🟥"
-    elif -1 < predicted_pmv < 1:
+    elif predicted_pmv=0:
         sensation = "Neutral"
         color = "🟦"
-    elif -2 < predicted_pmv <= -1:
+    elif -1 < predicted_pmv <= 0:
         sensation = "Slightly Cool"
         color = "🟦"
-    elif -3 < predicted_pmv <= -2:
+    elif -2 < predicted_pmv <= -1:
         sensation = "Cool"
         color = "❄️"
-    else:  # PMV <= -3
+    else:  # PMV <= -2
         sensation = "Cold"
         color = "🧊"
 
